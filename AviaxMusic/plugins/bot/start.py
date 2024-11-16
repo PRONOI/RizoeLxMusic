@@ -33,7 +33,7 @@ async def start_pm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
-            await message.reply_sticker("CAACAgUAAxkBAAIGJmc4uIA18pKbZrwXou93tqBwDOL-AAJaEwACIK7BVdo1lpGVyOvgNgQ")
+            await message.reply_sticker("CAACAgUAAxkBAAIGMWc4v4ESSM5dNVOvCMLgPBTh8BpYAAKEGAACYLPAVaWKaT2qX5ykNgQ")
             return await message.reply_photo(
                 photo=config.START_IMG_URL,
                 caption=_["help_1"].format(config.SUPPORT_GROUP),
